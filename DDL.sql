@@ -34,3 +34,6 @@ CREATE TABLE pedido_produto(
      );
      
      
+CREATE USER 'usuario_app'@'localhost' IDENTIFIED BY 'senha_segura123';
+GRANT SELECT, INSERT ON coma_bem.* TO 'usuario_app'@'localhost';
+
